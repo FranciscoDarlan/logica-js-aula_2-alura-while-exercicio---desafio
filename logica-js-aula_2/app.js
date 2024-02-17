@@ -13,7 +13,7 @@ while (chute != numeroSecreto) {
 
     // se o chute for igual entro aqui ...
     if (chute == numeroSecreto) {
-        alert(`parabens você acertou o numero secreto ${numeroSecreto} com ${tentativa} tentativas!`);
+        break;
     }
 
     if (chute < numeroSecreto) {
@@ -27,6 +27,7 @@ while (chute != numeroSecreto) {
 
 };
 
-
+let variavelTentativa = tentativa > 1 ? 'tentativas':'tentativa';
+alert(`parabens você acertou o numero secreto ${numeroSecreto} com ${tentativa} tentativas!`);
 
 
